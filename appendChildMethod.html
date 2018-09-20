@@ -1,0 +1,21 @@
+<html>
+  <body>
+    
+    <button onclick = "aloha()">aloha button</button>
+    <ul>
+      <li>this is the first thing</li>
+    </ul>
+    <script>
+    function aloha(){
+      var ulTag = document.getElementByTagName('ul')[0];
+      var newItem = document.createElement('li');
+      ulTag.appendChild(newItem);
+      var newText = document.createTextNode("alohaaaaaaa");
+      newItem.appendChild(newText);
+      document.body.appendChild(ulTag);
+      //if want to list use switch newP to newItem and replace ('p') with ('li')
+    }
+    
+    </script>
+  </body>
+</html>
