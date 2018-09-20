@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p class = "para">tsz ching</p>
+    <p class = "para">mikaela</p>
+    <p class = "para">loelle</p>
+    <p class = "para">derek</p>
+    <p class = "para">sampson</p>
+    <p class = "para">bao</p>
+    <p class = "para">jun</p>
+    <button onclick = "replace()">add</button>
+    <script>
+      function replace() {
+          var notX = document.getElementsByClassName('para').length;
+          var rand = (Math.floor(Math.random()* notX));
+          window.alert(notX);
+       
+          document.getElementsByClassName('para')[rand].innerHTML = "replaced"
+          
+      }
+    </script>
+  </body>
+</html>
